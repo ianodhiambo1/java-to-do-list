@@ -3,6 +3,7 @@ import java.util.List;
 
 interface Task {
     void displayTask();
+}
 class RegularTask implements Task {
     private String description;
 
@@ -13,7 +14,6 @@ class RegularTask implements Task {
     public void displayTask() {
         System.out.println("Regular Task: " + description);
     }
-}
 
 class PriorityTask implements Task {
     private String description;
