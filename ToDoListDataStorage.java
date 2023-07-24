@@ -32,9 +32,13 @@ public class ToDoListDataStorage {
         return new ArrayList<>(taskList);
     }
 
+    public static ToDoListDataStorage createToDoListStorage(){
+        return new ToDoListDataStorage();
+    }
+
     // Test cases
     public static void main(String[] args) {
-        ToDoListDataStorage dataStorage = new ToDoListDataStorage();
+        ToDoListDataStorage dataStorage = ToDoListDataStorage.createToDoListStorage();
 
         // Create and add tasks
         Task task1 = new Task("Buy groceries", false);
